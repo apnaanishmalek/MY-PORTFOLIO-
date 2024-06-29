@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/513df4d111.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <div class="container-fluid  p-0 m-0 " style="overflow: hidden;">
+
+        <div class="splash-screen d-flex justify-content-center align-items-center">
+            <div class="ui-abstergo">
+                <div class="abstergo-loader">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="ui-text">
+                    ANISH MALEK
+                    <div class="ui-dot"></div>
+                    <div class="ui-dot"></div>
+                    <div class="ui-dot"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <nav class="navbar navbar-expand-lg position-fixed w-100  "
+        style="background-color: black;color: white;z-index: 11111111;top: 0;">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color: white; font-weight: bolder; font-size: 2vw;">Anish Malek</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-between">
+                    <a class="nav-link active" aria-current="page" href="#home" style="color: white;">Home</a>
+                    <a class="nav-link" href="#about" style="color: white;">About</a>
+                    <a class="nav-link" href="#myworks" style="color: white;">Projects</a>
+                    <a class="nav-link " href="#contact" aria-disabled="true" style="color: white;">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- mobo nav-->
+
+    <div class="mobo-nav">
+        <ul>
+            <li><a href="#home"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#about"><i class="fa-brands fa-atlassian"></i></a></li>
+            <li><a href="#myworks"><i class="fa-solid fa-layer-group"></i></a></li>
+            <li><a href="#contact"> <i class="fa-solid fa-user"></i></a></li>
+
+        </ul>
+    </div>
+    <!-- mobo nav-end -->
+    <script>
+        var mainVar = document.querySelector(".mobo-nav")
+        var getScroll = window.pageYOffset;
+
+
+        window.onscroll = function () {
+            var mainScroll = window.pageYOffset;
+
+            if (mainScroll > getScroll) {
+                mainVar.style.bottom = "-100px";
+                mainVar.style.opacity = "0";
+            }
+            else {
+                mainVar.style.bottom = "0";
+                mainVar.style.opacity = "1"
+                mainVar.style.transition = ".4s linear"
+            }
+            getScroll = mainScroll;
+
+        }
+    </script>
+
+
+    <!-- hero-sec -->
+
+
+
+    <div class="container-fluid hero-sec-container-fluid pt-xl-5" style="background-color: black; color: white;"
+        id="home">
+        <div class="container hero-sec-container pt-xl-5 pt-0">
+            <div class="row">
+                <div
+                    class="col-md-6 hero-sec-left d-md-flex d-xl-block justify-content-center align-items-center flex-column pt-5 mt-4">
+
+                    <h3 style="color:#1d5a9b;" class="text-xl-start text-center">HELLO!</h3>
+                    <h4 style="font-size:7vw; font-weight: bold;" class="text-xl-start text-center">I'm <span
+                            style="color: #1d5a9b;"> Anish <br> Malek</span> </h4>
+                    <h2 style="font-size: 3vw;" class="text-xl-start text-center">Front-End Developer</h2>
+
+                    <div class="btn-div d-flex justify-content-between   align-items-center mx-4  mb-5 mx-xl-0 mt-5 ">
+                        <a href="#about"> <button
+                                style="background: #1d5a9b; border: none; color:white !important;">EXPLORE
+                                MORE</button></a>
+                        <a href="#myworks"> <button>MY WORKS</button></a>
+                    </div>
+                </div>
+                <div class="col-md-6 hero-sec-right  d-md-block d-none ">
+                    <img src="images/Anish2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- hero-sec-end -->
+
+
+
+
+    <!-- second sec-->
+
+
+
+    <div class="container-fluid  bar p-xl-5 p-0" style=" background: #1a1a1a;" id="about">
+        <div class="container text-white p-5">
+            <div class="row">
+                <div class="col-lg-6 about-sec  d-flex  flex-column pt-xl-0 pt-4" data-aos="fade-up">
+                    <h1 class="text-xl-start text-center ">About Me</h1>
+                    <h5 style="color:#1d5a9b;" class="text-xl-start text-center">FRONTEND WEB DEVELOPER</h5>
+                    <p style="font-weight: bold;" class="text-xl-start text-center mt-3">I have extensive experience in
+                        front-end development, crafting visually appealing and user-friendly websites using HTML, CSS,
+                        JavaScript and bootstrap. My work emphasizes responsive design, ensuring optimal performance
+                        across various devices and browsers.</p>
+
+                    <p style="font-weight: bold;" class="text-xl-start text-center d-xl-block d-none">With a strong
+                        background in front-end development, I excel in creating interactive and responsive web
+                        applications using HTML, CSS, and JavaScript. My experience ensures seamless user experiences
+                        and high-performance web interfaces.</p>
+
+                </div>
+
+                <div class="col-lg-6 p-5" data-aos="fade-up">
+                    <div class="rate py-2">
+                        <div class="rang d-flex align-items-center justify-content-between">
+                            <h6>HTML</h6>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress p-0" style="height: 10px;">
+                            <div class="progress-bar" style="width: 95%; background-color: #1d5a9b;"></div>
+                        </div>
+                    </div>
+
+                    <div class="rate py-2">
+                        <div class="rang d-flex align-items-center justify-content-between">
+                            <h6>CSS</h6>
+                            <span>90%</span>
+                        </div>
+
+                        <div class="progress p-0" style="height: 10px;">
+                            <div class="progress-bar" style="width: 90%; background-color:  #1d5a9b;"></div>
+                        </div>
+                    </div>
+
+                    <div class="rate py-2">
+                        <div class="rang d-flex align-items-center justify-content-between">
+                            <h6>BOOTSTRAP</h6>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress p-0" style="height: 10px;">
+                            <div class="progress-bar" style="width: 90%; background-color: #1d5a9b;"></div>
+
+                        </div>
+                    </div>
+
+                    <div class="rate py-2">
+                        <div class="rang d-flex align-items-center justify-content-between">
+                            <h6>JAVASCRIPT</h6>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar" style="width: 70%; background-color:#1d5a9b;"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- second-sec-end -->
+
+    <!-- third-sec -->
+
+    <div class="container-fluid third-sec-container-fluid">
+        <div class="container third-sec-container d-flex flex-column p-5">
+            <h1 class="text-center pb-4">WHAT I DO</h1>
+            <div class="row mt-3 mt-xl-0 ">
+                <div class="col-md-4 d-flex icon-card  flex-xl-row flex-column  align-items-center" data-aos="fade-up">
+
+                    <i class="fa fa-laptop mb-xl-3 mb-2"></i>
+
+                    <div class="text-content mx-2 mt-xl-5 mt-md-4 ">
+                        <h2 class="text-xl-start text-center">Responsive Website</h2>
+                        <p class="text-xl-start text-center"> "Creating a responsive website has been an enlightening
+                            journey for me. It's all about crafting a digital space that seamlessly adjusts to different
+                            screens."</p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 d-flex icon-card  flex-xl-row flex-column  align-items-center mt-3"
+                    data-aos="fade-up">
+
+                    <i class="fa-brands fa-bootstrap mb-xl-5 mb-2"></i>
+
+                    <div class="text-content mx-2 mt-xl-3">
+                        <h2 class="text-xl-start text-center">Bootstrap</h2>
+                        <p class="text-xl-start text-center">
+                            "Bootstrap has transformed my web development journey, providing a robust framework that
+                            simplifies the creation of responsive and visually appealing websites."</p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 d-flex icon-card  flex-xl-row flex-column  align-items-center mt-3"
+                    data-aos="fade-up">
+
+                    <i class="fa-brands fa-js mb-xl-5 mb-2"></i>
+
+                    <div class="text-content mx-2 mt-xl-2">
+                        <h2 class="text-xl-start text-center">JavaScript</h2>
+                        <p class="text-xl-start text-center"> "JavaScript has been my creative outlet in web
+                            development. It's the language that brings interactivity and dynamism to my projects."</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- fourth-sec-->
+
+    <div class="container-fluid portfolio-section  d-flex  align-items-center flex-column  p-5 " id="myworks">
+        <h2 class="mt-xl-5 mt-0">PORTFOLIO</h2>
+
+        <div class="container p-xl-5 p-md-5 " data-aos="fade-up">
+            <div class="row">
+
+                <div
+                    class="col-xl-6 col-md-12 portfolio-img mt-4 mt-xl-0 mt-md-0 d-flex justify-content-center align-items-center">
+                    <a target="_blank" href="https://apnaanishmalek.github.io/skrollex/">
+                        <img src="images/skrollex ss.png" alt="" id="scrollex">
+
+
+
+
+                    </a>
+                    <div class="overlay ">
+                        <a target="_blank" href="https://apnaanishmalek.github.io/skrollex/">
+                            <button class="mx-4"> View Full Website <i class="fa-solid fa-arrow-right"></i> </button>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div
+                    class=" col-xl-6 col-md-12 portfolio-img mt-4 mt-xl-0 mt-md-4 d-flex justify-content-center align-items-center">
+
+                    <a target="_blank" href="https://apnaanishmalek.github.io/Vecure-Project-1/">
+                        <img src="images/vecure ss.png" alt="">
+                    </a>
+
+                    <div class="overlay ">
+                        <a target="_blank" href="https://apnaanishmalek.github.io/Vecure-Project-1/">
+                            <button class="mx-4"> View Full Website <i class="fa-solid fa-arrow-right"></i> </button>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="row pt-xl-5">
+                <div
+                    class=" col-xl-6 col-md-12 portfolio-img  mt-4 mt-xl-0   d-flex justify-content-center align-items-center ">
+
+                    <a target="_blank" href="https://apnaanishmalek.github.io/Next-Academy---Project-2/">
+                        <img src="images/NA SS.png" alt="">
+                    </a>
+
+                    <div class="overlay">
+                        <a target="_blank" href="https://apnaanishmalek.github.io/Next-Academy---Project-2/">
+                            <button class="mx-4"> View Full Website <i class="fa-solid fa-arrow-right"></i></button>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+                <div
+                    class="  col-xl-6 col-md-12 portfolio-img  mt-4 mt-xl-0  d-flex justify-content-center align-items-center ">
+
+                    <a target="_blank" href="https://apnaanishmalek.github.io/Robofex---project-7/">
+                        <img src="images/robofex ss.png" alt="">
+                    </a>
+
+                    <div class="overlay">
+                        <a target="_blank" href="https://apnaanishmalek.github.io/Robofex---project-7/">
+                            <button class="mx-4"> View Full Website <i class="fa-solid fa-arrow-right"></i></button>
+
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row pt-xl-5">
+                <div
+                    class=" col-xl-6 col-md-12 portfolio-img  mt-4 mt-xl-0  d-flex justify-content-center align-items-center ">
+
+                    <a target="_blank" href="https://apnaanishmalek.github.io/Trident-project-5/">
+                        <img src="images/trident ss.png" alt="">
+                    </a>
+
+
+                    <div class="overlay">
+                        <a target="_blank" href="https://apnaanishmalek.github.io/Trident-project-5/">
+                            <button class="mx-4"> View Full Website <i class="fa-solid fa-arrow-right"></i></button>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div
+                    class=" col-xl-6 col-md-12 portfolio-img  mt-4 mt-xl-0  d-flex justify-content-center align-items-center ">
+
+                    <a target="_blank" href="https://apnaanishmalek.github.io/Logo-ipsum-project-5/">
+                        <img src="images/logo ipsum ss.png" alt="">
+                    </a>
+
+
+                    <d iv class="overlay">
+                        <a target="_blank" href="https://apnaanishmalek.github.io/Logo-ipsum-project-5/">
+                            <button class="mx-4"> View Full Website <i class="fa-solid fa-arrow-right"></i> </button>
+
+                        </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    </div>
+
+    <!-- fourth-sec-end -->
+
+
+    <!-- footer-sec -->
+
+    <div class="container-fluid footer-section d-flex  flex-column align-items-center p-5   " id="contact">
+        <h1 class="mt-xl-5">Contact Me</h1>
+        <h5>Below are the details to reach out to me!
+        </h5>
+
+        <div class="container  mt-xl-5 pt-xl-5 p-5  " data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-6 col-xl-3 contact-box d-flex icon-sec flex-column align-items-center">
+                    <i class="fa-solid fa-signs-post"></i>
+                    <span class="mt-4">ADDRESS</span>
+                    <label class="mt-3">Gandhinagar,India</label>
+                </div>
+                <div
+                    class="col-md-6 col-xl-3 mt-5 mt-md-0 mt-xl-0 contact-box d-flex icon-sec flex-column align-items-center ">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="mt-4">CONTACT NUMBER</span>
+                    <a href="tel:+91 8140796312" style="color: white;" class="mt-3">+91 814 0796 312</a>
+                </div>
+                <div class="col-md-6 col-xl-3 mt-5 mt-xl-0 d-flex contact-box icon-sec flex-column align-items-center ">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span class="mt-4">EMAIL ADDRESS</span>
+                    <a href="mailto:anishmalek6312@gmail.com
+                    " style="color: white;" class="mt-3">anishmalek6312@gmail.com</a>
+                </div>
+                <div class="col-md-6 col-xl-3 mt-5 mt-xl-0 d-flex contact-box icon-sec flex-column align-items-center ">
+                    <i class="fa-solid fa-earth-africa"></i>
+                    <span class="mt-4">MY RESUME</span>
+                    <a target="_blank" href="images/MY RESUME.pdf" class="mt-3"> resume link </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- <div class="container br p-5 social-icons d-flex justify-content-center align-items-center"> -->
+
+        <div class="social-icons d-flex justify-content-center align-items-center  flex-xl-row flex-column  p-xl-5 ">
+            <span> Find me on</span>
+            <ul class="d-flex justify-content-evenly p-0  ml-3  ">
+                <li> <a target="_blank" href="https://www.linkedin.com/in/anish-malek-b57677309/"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+                <li> <a target="_blank" href="https://github.com/apnaanishmalek"> <i
+                            class="fa-brands fa-github"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/anish_malek_07/"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+                <li><a target="_blank" href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a></li>
+
+            </ul>
+        </div>
+
+        <h4 class="mt-xl-0 mt-4 " style="color: #999;">Copyright ©2024 All rights reserved | </h4>
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+
+
+
+        <!-- our aos-data -->
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+        <script src="fun.js"></script>
+
+
+
+</body>
+
+</html>
